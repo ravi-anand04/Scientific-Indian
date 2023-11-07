@@ -18,7 +18,7 @@ const LatestLaunches = () => {
   };
 
   return (
-    <div >
+    <div>
       <ul className="flex flex-col gap-3">
         {launches.map((launch) => (
           <li key={launch.id}>

@@ -39,17 +39,22 @@ const Featured = () => {
   return (
     <div className="flex flex-col flex-wrap gap-5">
       <div className="img-container relative">
-        <img src={imageUrl} alt="" />
+        <img src={imageUrl} loading="lazy" />
         <span className="absolute bottom-0 bg-white left-[30%] px-5 max-lg:hidden">
           {secondaryCreator}
         </span>
       </div>
       <h2 className="text-center text-3xl font-bold font-georgia">{title}</h2>
-      <h2 className="text-center text-md opacity-60 font-georgia">
-        {description}
-      </h2>
-      <span className="text-center text-sm font-georgia">
-        <span className="font-bold font-montserrat">Credits:</span> {secondaryCreator ? secondaryCreator : photographer}
+      <h2 className="text-md opacity-60 font-georgia">{description}</h2>
+      <p
+        className="text-md opacity-60 font-georgia"
+        style={{ height: "600px", overflow: "hidden" }}
+      >
+        {longDesc}
+      </p>
+      <span className="text-center text-sm font-georgia ">
+        <span className="font-bold font-montserrat">Credits:</span>{" "}
+        {secondaryCreator ? secondaryCreator : photographer}
       </span>
     </div>
   );

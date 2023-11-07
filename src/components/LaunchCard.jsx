@@ -32,7 +32,13 @@ const LaunchCard = ({
       <p className="font-normal text-gray-700 dark:text-gray-400">
         <p>{launch_description}</p>
       </p>
-      <Button visible={true} label="Read more..." color="bg-blue-600" textColor={"white"} py={2}/>
+      <Button
+        visible={true}
+        label="Read more..."
+        color="bg-blue-600"
+        textColor={"white"}
+        py={2}
+      />
     </Card>
   );
 };

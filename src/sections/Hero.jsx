@@ -25,7 +25,7 @@ const Hero = () => {
     <div className="grid grid-cols-10 mt-5 sm:mx-[5%] lg:mx-[10%] max-sm:mx-1 font-georgia">
       <div
         // style={{ maxHeight: "60%" }}
-        className="  max-lg:order-2 max-md:col-span-10 max-lg:col-span-5 col-span-3 p-2 sidebar-left"
+        className="max-lg:order-2 max-md:col-span-10 max-lg:col-span-5 col-span-3 p-2 sidebar-left"
       >
         <IsroArticles />
       </div>
@@ -37,11 +37,10 @@ const Hero = () => {
           Featured Article
         </h1> */}
         <Featured />
-
       </div>
       <div
         // style={{ maxHeight: "60%" }}
-        className="max-lg:order-3  col-span-3 max-md:col-span-10 max-lg:col-span-5 p-2 sidebar-left"
+        className="max-lg:order-3 max-sm:m-auto col-span-3 max-md:col-span-10 max-lg:col-span-5 p-2 sidebar-left"
       >
         <LatestLaunches />
       </div>

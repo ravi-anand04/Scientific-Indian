@@ -42,6 +42,7 @@ export default {
         wide: "1440px",
       },
     },
+    darkMode: false,
   },
   plugins: [require("flowbite/plugin")],
 };

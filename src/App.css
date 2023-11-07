@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=DM+Serif+Text&family=Geologica:wght@300;500;700&family=Poppins:wght@700&family=Young+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=DM+Serif+Text&family=Geologica:wght@300;500;700&family=Poppins:wght@700&family=Young+Serif&display=swap");
 
-*{
-    font-family:Arvo;
+* {
+  font-family: Arvo;
+}
+
+.darky {
+  background-color: rgb(39, 39, 39);
 }

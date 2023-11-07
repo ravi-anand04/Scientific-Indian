@@ -17,7 +17,7 @@ const IsroArticles = () => {
   };
 
   return (
-    <>
+    <div>
       {Array.from(articles).map((article) => (
         <Card
           imgAlt="Latest ISRO News"
@@ -30,12 +30,15 @@ const IsroArticles = () => {
             </h5>
             <p className="flex flex-col gap-3 font-normal text-gray-700 dark:text-gray-400">
               <p>{article.summary}</p>
-              <h2><span className="font-bold">Published At:</span> {article.published_at.split("T")[0]}</h2>
+              <h2>
+                <span className="font-bold">Published At:</span>{" "}
+                {article.published_at.split("T")[0]}
+              </h2>
             </p>
           </div>
         </Card>
       ))}
-    </>
+    </div>
   );
 };
 
